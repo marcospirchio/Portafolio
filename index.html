@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Desarrollador Backend.">
     <title>Portafolio Web Marcos Pirchio Giani</title>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -93,7 +94,7 @@
             <div class="w-full">
                 <div class="flex flex-col md:flex-row gap-5">
                     <div class="w-full md:w-1/4 flex flex-col justify-around items-center gap-4 mb-4">
-                        <img class="rounded-full shadow-lg size-40" src="./images/Imagen.jpg" alt="Marcos Dev">
+                        <img class="rounded-full shadow-lg size-40 object-cover" src="./images/imagen.JPEG" alt="Marcos Dev">
                     </div>
                     <div class="w-full md:w-3/4">
                         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5x">
@@ -101,7 +102,7 @@
                             <span class="cursor blink"></span>
                         </h1>                                             
                         <p class="mt-6 text-xl text-white [&>strong]:text-yellow-200 [&>strong]:font-semibold">
-                            <strong>Estudiante en la Tecnicatura Universitaria en Desarrollo de Software</strong>. Especializado
+                            <strong>Técnico en Desarrollo de Software</strong>. Especializado
                             en el desarrollo backend. Mi experiencia incluye la creación de soluciones robustas y escalables, integrando bases de datos y APIs.
                         </p>
                         <nav class="flex flex-wrap gap-4 mt-8">
@@ -140,7 +141,7 @@
                             Contacto
                             </a>
                             <!-- Botón de Descargar Cv -->
-                            <a href="./Cv/Cv Marcos Pirchio Giani.pdf" download rel="noopener noreferrer"
+                            <a href="./Cv/Cv_Marcos_Pirchio_Giani.pdf" download rel="noopener noreferrer"
                             class="flex items-center justify-center gap-2 px-4 py-2 border border-gray-600 rounded-full bg-gray-800 text-white text-md hover:bg-gray-100 hover:border-gray-300 hover:text-black">
                              <!-- Icono de Descargar -->
                              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -158,96 +159,162 @@
 
         <section id="technologies" class="py-20 bg-gray-800">
             <div class="container mx-auto">
-                <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Tecnologías</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <!-- Frontend -->
-                    <div>
-                        <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Frontend</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-16 mx-auto">
-                                <p class="mt-2">HTML</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-16 mx-auto">
-                                <p class="mt-2">CSS</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 mx-auto">
-                                <p class="mt-2">JavaScript</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 mx-auto">
-                                <p class="mt-2">React.js</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-16 mx-auto">
-                                <p class="mt-2">Tailwind CSS</p>
-                            </div>
-                        </div>
+              <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Tecnologías</h2>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                
+                <!-- Frontend -->
+                <div class="border-r border-gray-600 last:border-r-0 pr-4">
+                  <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Frontend</h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 mx-auto">
+                      <p class="mt-2">React.js</p>
                     </div>
-                    <!-- Backend -->
-                    <div>
-                        <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Backend</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 mx-auto">
-                                <p class="mt-2">Python</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-16 mx-auto">
-                                <p class="mt-2">Java</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="w-16 h-16 mx-auto">
-                                <p class="mt-2 text-white">SQL Server</p>
-                            </div>
-                        </div>
+                    <div data-aos="zoom-in">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-16 mx-auto">
+                      <p class="mt-2">Tailwind CSS</p>
                     </div>
-                    <!-- Herramientas -->
-                    <div>
-                        <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Herramientas</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-16 mx-auto">
-                                <p class="mt-2">Docker</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-16 mx-auto">
-                                <p class="mt-2">GitHub</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 mx-auto">
-                                <p class="mt-2">Git</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" alt="Azure Data Studio" class="w-16 h-16 mx-auto">
-                                <p class="mt-2 text-white">Azure Data Studio</p>
-                            </div>
-                            <div data-aos="zoom-in">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman Logo" class="w-16 h-16 mx-auto">
-                                <p class="mt-2 text-white">Postman</p>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+          
+                <!-- Backend -->
+                <div class="border-r border-gray-600 last:border-r-0 pr-4">
+                  <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Backend</h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 mx-auto">
+                      <p class="mt-2">Python</p>
+                    </div>
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-16 mx-auto">
+                      <p class="mt-2">Java</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Bases de datos -->
+                <div class="border-r border-gray-600 last:border-r-0 pr-4">
+                  <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Bases de datos</h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div data-aos="zoom-in">
+                      <img src="./images/mongodb-svgrepo-com.svg" alt="MongoDB" class="w-16 h-16 mx-auto">
+                      <p class="mt-2 text-white">MongoDB</p>
+                    </div>
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="w-16 h-16 mx-auto">
+                      <p class="mt-2 text-white">SQL Server</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Herramientas -->
+                <div class="pr-4">
+                  <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Herramientas</h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-16 mx-auto">
+                      <p class="mt-2">Docker</p>
+                    </div>
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-16 mx-auto">
+                      <p class="mt-2">GitHub</p>
+                    </div>
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 mx-auto">
+                      <p class="mt-2">Git</p>
+                    </div>
+                    <div data-aos="zoom-in">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman Logo" class="w-16 h-16 mx-auto">
+                      <p class="mt-2 text-white">Postman</p>
+                    </div>
+                    <div data-aos="zoom-in">
+                      <img src="./images/N8n--Streamline-Simple-Icons.svg" alt="n8n" class="w-16 h-16 mx-auto">
+                      <p class="mt-2 text-white">n8n</p>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
             </div>
-        </section>
+          </section>
+          
               
 
         <section id="projects" class="py-20 mx-auto container lg:max-w-4xl md:max-w-2xl">
             <h3 class="text-3xl font-bold text-left mb-8 text-white" data-aos="fade-up">Mis Proyectos</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+                <!-- Proyecto SecureHire -->
+<div x-data="{ open: false, slide: 0 }" class="block rounded-lg shadow-secondary-1 bg-slate-900" data-aos="zoom-in">
+    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+      <img class="rounded-t-lg object-cover object-center w-full h-56" src="./images/ProyectoSecurehire/SecureHireLogo.png" alt="Proyecto SecureHire">
+    </div>
+  
+    <div class="p-6 text-white">
+      <h4 class="mb-2 text-2xl font-bold text-yellow-200">SecureHire</h4>
+      <p class="mb-4 text-base">
+        SecureHire es una plataforma web de reclutamiento desarrollada bajo el modelo SaaS, que integra inteligencia artificial
+         para optimizar los procesos de selección de personal. La aplicación analiza y resume automáticamente currículums, 
+         evaluaciones y permite realizar comparaciones entre los candidatos para asistir a los reclutadores en la toma de decisiones.
+          Presenta una arquitectura RESTful implementada con Java Spring Boot, MongoDB y Next.js.
+      </p>
+  
+      <div class="flex gap-4">
+        <!-- Botón: Vista Previa que abre modal -->
+        <button @click="$dispatch('open-securehire-modal')"
+          class="flex items-center justify-center gap-2 px-4 py-1 border border-gray-600 rounded-full bg-gray-800 text-white text-md hover:bg-gray-100 hover:border-gray-300 hover:text-black">
+          <!-- Icono ojo -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          Vista Previa
+        </button>
+  
+        <!-- Botón: Ver Código -->
+        <a href="https://github.com/marcospirchio/SecureHire" target="_blank" rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 px-4 py-1 border border-gray-600 rounded-full bg-gray-800 text-white text-md hover:bg-gray-100 hover:border-gray-300 hover:text-black">
+          <!-- Icono GitHub -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+                     0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757
+                     -1.09-.744.083-.729.083-.729 1.205.084 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 
+                     3.495.998.108-.775.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.93 
+                     0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.118-3.176 
+                     0 0 1.007-.322 3.3 1.23.957-.267 1.983-.399 3.005-.404 
+                     1.022.005 2.048.137 3.005.404 2.29-1.552 3.295-1.23 
+                     3.295-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.91 
+                     1.23 3.22 0 4.61-2.807 5.625-5.475 5.92.43.37.815 1.1.815 2.22 
+                     0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.577 
+                     4.765-1.587 8.2-6.083 8.2-11.387 0-6.627-5.373-12-12-12z" />
+          </svg>
+          Ver Código
+        </a>
+      </div>
+    </div>
+  
+  </div>
+  
+                
                 <!-- Proyecto Propsuite -->
                 <div class="block rounded-lg shadow-secondary-1 bg-slate-900" data-aos="zoom-in">
                     <div class="relative overflow-hidden bg-cover bg-no-repeat">
+<<<<<<< HEAD
                         <img class="rounded-t-lg object-cover object-center w-full h-56" src="./images/Propsuite.png" alt="Proyecto Propsuite">
                                         <!-- !!!!!!!!!!!!!!!!!!!CAMBIAR LINK A VISTA!!!!!!!!!!!!!!!!!!!
                         <a href="LINK VISTA" target="_blank" role="link"> 
                             <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
                         </a> -->
+=======
+                      <img class="rounded-t-lg object-cover object-center w-full h-56" src="./images/Propsuite.png" alt="Proyecto Propsuite">
+>>>>>>> b67e56d (actualizo portafolio octubre 2025)
                     </div>
+                  
                     <div class="p-6 text-white">
+<<<<<<< HEAD
                         <h4 class="mb-2 text-2xl font-bold text-yellow-200">Propsuite</h4>
                         <p class="mb-4 text-base">
                             API RESTful para la gestión de edificios, desarrollada con un backend en Java utilizando Spring Boot. 
@@ -277,8 +344,48 @@
                         Ver Código
                     </a>
                         </div>
+=======
+                      <h4 class="mb-2 text-2xl font-bold text-yellow-200">Propsuite</h4>
+                      <p class="mb-4 text-base">
+                        PropSuite es una aplicación web desarrollada bajo el modelo SaaS, orientada a la gestión integral de edificios y consorcios. 
+                        Permite administrar unidades, propietarios, inquilinos y reclamos desde una plataforma centralizada y segura. 
+                        Presenta una arquitectura RESTful implementada con Java Spring Boot, SQL Server y React.
+                      </p>
+                  
+                      <div class="flex gap-4">
+                        <!-- Botón: Ver Código -->
+                        <a href="https://github.com/marcospirchio/Propsuite" target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-2 px-4 py-1 border border-gray-600 rounded-full bg-gray-800 text-white text-md hover:bg-gray-100 hover:border-gray-300 hover:text-black">
+                          <!-- Icono de GitHub -->
+                          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+                                     0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757
+                                     -1.09-.744.083-.729.083-.729 1.205.084 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 
+                                     3.495.998.108-.775.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.93 
+                                     0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.118-3.176 
+                                     0 0 1.007-.322 3.3 1.23.957-.267 1.983-.399 3.005-.404 
+                                     1.022.005 2.048.137 3.005.404 2.29-1.552 3.295-1.23 
+                                     3.295-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.91 
+                                     1.23 3.22 0 4.61-2.807 5.625-5.475 5.92.43.37.815 1.1.815 2.22 
+                                     0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.577 
+                                     4.765-1.587 8.2-6.083 8.2-11.387 0-6.627-5.373-12-12-12z"/>
+                          </svg>
+                          Ver Código
+                        </a>
+                      </div>
+>>>>>>> b67e56d (actualizo portafolio octubre 2025)
                     </div>
-                </div>
+                  </div>
+                  <!--<a href="https://TU-LINK-AQUI.com" target="_blank" rel="noopener noreferrer"
+   class="flex items-center justify-center gap-2 px-4 py-1 border border-gray-600 rounded-full bg-gray-800 text-white text-md hover:bg-gray-100 hover:border-gray-300 hover:text-black">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+<circle cx="12" cy="12" r="3"></circle>
+</svg>
+Vista Previa
+</a>  
+ESTE CODIGO ES PARA PONER EL BOTON DE VISTA PREVIA EN CADA PROYECTO-->
             <!-- proyecto autopartes-->
             <div class="block rounded-lg shadow-secondary-1 bg-slate-900" data-aos="zoom-in">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
@@ -314,22 +421,17 @@
             <article class="flex flex-col md:flex-row items-center justify-center gap-8 text-white">
                 <div class="[&>p]:mb-4 [&>p>strong]:text-yellow-200 [&>p>strong]:font-medium text-pretty order-2 md:order-1">
                     <p>
-                        Me llamo Marcos, actualmente tengo 21 años. Mi interés por la programación comenzó en mis años de secundaria, explorando el desarrollo web por curiosidad.
+                      Me llamo Marcos Pirchio Giani, tengo 22 años. Soy <strong>Técnico en Desarrollo de Software</strong>, y actualmente curso la Licenciatura en Gestión de Tecnologías de la Información en la Universidad Argentina de la Empresa (UADE).
                     </p>
                     <p>
-                        Hoy en día, soy estudiante en la Tecnicatura Universitaria en Desarrollo de Software en UADE, cursando el tercer año <strong>con 5 materias restantes para recibirme</strong>.
+                        A lo largo de mi formación académica, he tenido la oportunidad de trabajar en diversos proyectos, entre ellos la creación
+                        de <strong>plataformas web dinámicas y APIs RESTful.</strong> aplicando buenas prácticas de desarrollo y trabajo en equipo.Estas experiencias me permitieron fortalecer mis habilidades técnicas y aprender a resolver desafíos reales en entornos colaborativos.
                     </p>
                     <p>
-                        A lo largo de mi formación académica, he tenido la oportunidad de trabajar en diversos proyectos, <strong>como la creación
-                        de plataformas web dinámicas y APIs RESTful.</strong> Este recorrido no solo me permitió adquirir valiosas habilidades técnicas,
-                        sino también formar parte de equipos de trabajo, donde aprendí a resolver desafíos reales junto a amigos y compañeros.
-                        Lo que más he disfrutado de esta experiencia es cómo cada tema aprendido me permitió crecer como persona y como profesional. 
-                    </p>
-                    <p>
-                        Mi objetivo es <strong>continuar aprendiendo</strong> y contribuir al desarrollo de proyectos desafiantes e innovadores.
+                      Actualmente me encuentro en la búsqueda de <strong>mi primera experiencia laboral</strong> en el área de sistemas, preferentemente en el desarrollo backend, aunque cuento con la capacidad y predisposición para adaptarme a diferentes áreas. Estoy plenamente dispuesto a aprender todo lo que sea necesario y motivado por aportar valor a proyectos reales, creciendo tanto en lo profesional como en lo personal.                   
                     </p>
                 </div>
-                <img src="./images/Imagen.jpg" alt="Marcos Dev" class="w-52 order-1 object-cover p-1 md:order-2 lg:p-2 lg:w-64 rounded-full bg-yellow-500/5 ring-4 ring-white/30">
+                <img src="./images/imagen.JPEG" alt="Marcos Dev" class="w-52 h-52 order-1 object-cover md:order-2 lg:w-64 lg:h-64 rounded-full bg-yellow-500/5 ring-4 ring-white/30 aspect-square">
             </article>
         </section>
 
@@ -433,7 +535,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const text = "Hola, soy Marcos Pirchio!";
+            const text = "Hola, soy Marcos Pirchio Giani  !";
             const speed = 100; // Velocidad de escritura en milisegundos
             const delayBeforeDelete = 2000; // Tiempo antes de empezar a borrar en milisegundos
             const delayBeforeTypeAgain = 1000; // Tiempo antes de volver a escribir en milisegundos
@@ -521,8 +623,43 @@
 
     sections.forEach(section => observer.observe(section));
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
-    
+    <!-- Modal SecureHire - Video preview -->
+    <div x-data="{ 
+           open: false,
+           toggleFs() { const v = this.$refs.video; if (!v) return; if (!document.fullscreenElement) v.requestFullscreen(); else document.exitFullscreen(); }
+         }" 
+         x-show="open" 
+         x-cloak 
+         x-init="$watch('open', (val) => { if (!val) { const v = $refs.video; if (v) { v.pause(); v.currentTime = 0; if (document.fullscreenElement) document.exitFullscreen(); } } else { $refs.video && $refs.video.play && $refs.video.play().catch(()=>{}); } })"
+         @open-securehire-modal.window="open = true"
+         @keydown.escape.window="open = false"
+         @click.self="open = false"
+         class="fixed inset-0 z-[9999] flex items-center justify-center p-4"
+         style="backdrop-filter: blur(8px); background: rgba(0, 0, 0, 0.7);">
+     
+      <div class="bg-slate-900 rounded-2xl shadow-2xl w-full max-w-5xl h-[75vh] flex flex-col border border-slate-700">
+        <!-- Header -->
+        <div class="flex justify-between items-center p-4 bg-gradient-to-r from-slate-800 to-slate-900 rounded-t-2xl border-b border-slate-700">
+          <h3 class="text-white text-2xl font-bold text-yellow-200">Vista previa: SecureHire</h3>
+          <button @click="open = false"
+            class="text-white hover:text-yellow-400 text-3xl font-bold transition-colors duration-300 bg-slate-800 hover:bg-slate-700 rounded-full w-10 h-10 flex items-center justify-center">
+            &times;
+          </button>
+        </div>
+
+        <!-- Contenido: Video -->
+        <div class="flex-1 flex items-center justify-center p-3 bg-slate-800">
+          <div class="relative w-full h-full flex items-center justify-center">
+            <video x-ref="video" src="./video_demo/demo_securehire.mp4" controls autoplay class="max-w-3xl w-full rounded-lg bg-black"></video>
+          </div>
+        </div>
+
+        <!-- Footer vacío para mantener estética -->
+        <div class="p-3 bg-gradient-to-r from-slate-800 to-slate-900 rounded-b-2xl border-t border-slate-700"></div>
+      </div>
+    </div>
 
 </body>
 
