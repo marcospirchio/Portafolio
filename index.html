@@ -76,13 +76,17 @@
             }
         }
 
+        /* Dividers in technologies: hidden by default, appear when section is visible */
+        #technologies .border-divider { border-right-color: transparent; }
+        #technologies.visible .border-divider { border-right-color: #4b5563; /* border-gray-600 */ }
+
     </style>
 </head>
 
 <body class="scroll-smooth bg-gradient-to-b from-slate-900 to-indigo-900 text-white">
     <div id="particles-js"></div>
     <header>
-        <nav id="menu" class="w-full flex justify-center space-x-4 text-white font-bold fixed top-0 z-50 py-3 bg-slate-900 bg-opacity-80">
+        <nav id="menu" class="w-full flex justify-center space-x-4 text-white font-bold fixed top-0 z-50 py-3 bg-slate-900">
             <a href="#about" class="hover:text-yellow-200">Sobre mí</a>
             <a href="#technologies" class="hover:text-yellow-200">Tecnologías</a>
             <a href="#projects" class="hover:text-yellow-200">Proyectos</a>
@@ -157,14 +161,14 @@
             </div>
         </section>
 
-        <section id="technologies" class="py-20 bg-gray-800">
+        <section id="technologies" class="section py-20 bg-gray-800">
             <div class="container mx-auto">
               <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Tecnologías</h2>
               
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 
                 <!-- Frontend -->
-                <div class="border-r border-gray-600 last:border-r-0 pr-4">
+                <div class="border-r border-divider last:border-r-0 pr-4">
                   <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Frontend</h3>
                   <div class="grid grid-cols-2 gap-4">
                     <div data-aos="zoom-in">
@@ -179,7 +183,7 @@
                 </div>
           
                 <!-- Backend -->
-                <div class="border-r border-gray-600 last:border-r-0 pr-4">
+                <div class="border-r border-divider last:border-r-0 pr-4">
                   <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Backend</h3>
                   <div class="grid grid-cols-2 gap-4">
                     <div data-aos="zoom-in">
@@ -194,7 +198,7 @@
                 </div>
           
                 <!-- Bases de datos -->
-                <div class="border-r border-gray-600 last:border-r-0 pr-4">
+                <div class="border-r border-divider last:border-r-0 pr-4">
                   <h3 class="text-2xl font-semibold text-yellow-400 mb-4" data-aos="fade-up">Bases de datos</h3>
                   <div class="grid grid-cols-2 gap-4">
                     <div data-aos="zoom-in">
@@ -385,7 +389,7 @@ ESTE CODIGO ES PARA PONER EL BOTON DE VISTA PREVIA EN CADA PROYECTO-->
                     </p>
                     <p>
                         A lo largo de mi formación académica, he tenido la oportunidad de trabajar en diversos proyectos, entre ellos la creación
-                        de <strong>plataformas web dinámicas y APIs RESTful.</strong> aplicando buenas prácticas de desarrollo y trabajo en equipo.Estas experiencias me permitieron fortalecer mis habilidades técnicas y aprender a resolver desafíos reales en entornos colaborativos.
+                        de <strong>plataformas web dinámicas y APIs RESTful</strong> aplicando buenas prácticas de desarrollo y trabajo en equipo.Estas experiencias me permitieron fortalecer mis habilidades técnicas y aprender a resolver desafíos reales en entornos colaborativos.
                     </p>
                     <p>
                       Actualmente me encuentro en la búsqueda de <strong>mi primera experiencia laboral</strong> en el área de sistemas, preferentemente en el desarrollo backend, aunque cuento con la capacidad y predisposición para adaptarme a diferentes áreas. Estoy plenamente dispuesto a aprender todo lo que sea necesario y motivado por aportar valor a proyectos reales, creciendo tanto en lo profesional como en lo personal.                   
@@ -396,7 +400,7 @@ ESTE CODIGO ES PARA PONER EL BOTON DE VISTA PREVIA EN CADA PROYECTO-->
         </section>
 
         <!-- Idiomas -->
-        <section id="languages" class="py-20 bg-gray-800">
+        <section id="languages" class="pt-20 pb-12 bg-gray-800">
             <div class="container mx-auto">
                 <h2 class="text-4xl font-bold mb-8 text-center text-white" data-aos="fade-up">Idiomas</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -429,7 +433,7 @@ ESTE CODIGO ES PARA PONER EL BOTON DE VISTA PREVIA EN CADA PROYECTO-->
         </section>
         
         <!-- Certificaciones -->
-        <section id="Certifiaciones" class="py-20 bg-gray-800">
+        <section id="Certifiaciones" class="pt-12 pb-20 bg-gray-800">
             <div class="container mx-auto">
                 <h2 class="text-4xl font-bold mb-8 text-center text-white-400" data-aos="fade-up">Certificaciones</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -455,30 +459,10 @@ ESTE CODIGO ES PARA PONER EL BOTON DE VISTA PREVIA EN CADA PROYECTO-->
                 </div>
             </div>
         </section>
-        
-
-        <!-- Contacto -->
-        <!-- Podemos hacer que funcione con Formspree o EmailJS -->
-        <section id="contact" class="py-20 bg-gray-900">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-8 text-yellow-400">Contacto</h2>
-                <form class="max-w-xl mx-auto space-y-4" id="contact-form">
-                    <input type="text" id="name" placeholder="Tu Nombre" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:ring-2 focus:ring-yellow-400">
-                    <span id="name-error" class="text-red-500 text-sm hidden">Por favor, ingresa tu nombre.</span>
-                    <input type="email" id="email" placeholder="TuEmail@gmail.com" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:ring-2 focus:ring-yellow-400">
-                    <span id="email-error" class="text-red-500 text-sm hidden">Por favor, ingresa un email válido.</span>
-                    <textarea id="message" placeholder="Tu Mensaje" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:ring-2 focus:ring-yellow-400"></textarea>
-                    <span id="message-error" class="text-red-500 text-sm hidden">Por favor, escribe tu mensaje.</span>
-                    <button type="submit" class="px-6 py-2 bg-yellow-400 text-black rounded-full hover:bg-yellow-500">Enviar</button>
-                    <div id="success-message" class="hidden text-green-500 text-center">¡Mensaje enviado exitosamente!</div>
-                </form>
-                
-            </div>
-        </section>
     </main>
     <footer class="pl-8 md:pl-0 mt-16 mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center">
         <div class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4">
-            <span class="text-sm sm:text-center text-white">© 2024 Marcos Pirchio</span>
+            <span class="text-sm sm:text-center text-white">© 2025 Marcos Pirchio</span>
         </div>
     </footer>
 
